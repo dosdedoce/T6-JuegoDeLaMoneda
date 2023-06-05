@@ -1,0 +1,85 @@
+body{  
+        font-family: 'Quicksand', sans-serif;
+        font-size: 62.5%;
+}
+h1{
+        font-size: 4em;
+}
+.moneda{
+        width: 150px;
+        height: 150px;
+}
+.contiene__monedas{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+}
+.contiene__monedas img{
+        width: 100%;
+}
+.moneda__cara , .moneda__cruz{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+}
+/* .moneda__cruz{
+        transform: rotateX(180deg);
+} */
+
+.moneda__cara{
+        transform: rotateX(180deg);
+}
+
+@keyframes girar-cara {
+        0%{
+                transform: rotateX(0);
+        }
+        100%{
+                transform: rotateX(1980deg);
+        }
+}
+@keyframes girar-cruz {
+        0%{
+                transform: rotateX(0);
+        }
+        100%{
+                transform: rotateX(2160deg);
+        }
+}
+
+
+/*  ********* BOTONES ************ */ 
+#btnLanzar,  #btnReiniciar{
+        border: none;
+        background-color:  #fff;
+        font-size: 2em;
+        color: coral;
+}
+#btnLanzar:hover,  #btnReiniciar:hover{
+        color: deepskyblue;
+}
+/*  ********* FIN BOTONES ************ */ 
+/*  ********* RESULTADOS ************ */ 
+.resultados{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+}
+.resultados__moneda{
+        font-size: 2em;
+        font-weight: 700;
+}
+.resultados__cara{
+        margin-top: 0;
+        color: darkolivegreen;
+        font-size: 4em;
+}
+.resultados__cruz{
+        margin-top: 0;
+        color: orchid;
+        font-size: 4em;
+}

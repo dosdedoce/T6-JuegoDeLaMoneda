@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego Cara y Cruz</title>
+        <link rel="stylesheet" href="css/caraycruz.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+                <h1>Lanzar la moneda</h1>
+        </header>
+        <main>
+                <section class="moneda">
+                        <div class="contiene__monedas">
+                                <div class="moneda__cara">
+                                        <img src="img/cara.svg" alt="">
+                                </div>
+                                <div class="moneda__cruz">
+                                        <img src="img/cruz.svg" alt="">
+                                </div>
+                        </div>
+                </section>
+                <section>
+                        <article  class="botones">
+                                <button id="btnLanzar">Lanzar</button>
+                                <button id="btnReiniciar">Reiniciar</button>
+                        </article>
+                        <article class="resultados">
+                                <div class="resultados__moneda">
+                                        <p>Cara</p>
+                                        <p>
+                                                <img src="img/cara.svg" alt="" height="100" width="100">
+                                        </p>
+                                        <p class="resultados__cara"> 0 </p>
+                                </div>
+                                <div class="resultados__moneda">
+                                        <p>Cruz</p>
+                                        <p>
+                                                <img src="img/cruz.svg" alt="" height="100" width="100">
+                                        </p>
+                                        <p class="resultados__cruz"> 0 </p>
+                                </div>
+                        </article>
+                </section>
+        </main>
+</body>
+        <script src="js/caraycruz.js"></script>
+</html>
