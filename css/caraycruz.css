@@ -1,19 +1,38 @@
 body{  
         font-family: 'Quicksand', sans-serif;
         font-size: 62.5%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 }
 h1{
         font-size: 4em;
+        text-align: center;
+}
+#containerMain{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 }
 .moneda{
         width: 150px;
         height: 150px;
 }
+.botones{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
 .contiene__monedas{
+
         height: 100px;
         width: 100px;
         position: relative;
         margin: 0 auto;
+        margin-top: 65px;
         transform-style: preserve-3d;
 }
 .contiene__monedas img{
@@ -25,10 +44,6 @@ h1{
         width: 100%;
         backface-visibility: hidden;
 }
-/* .moneda__cruz{
-        transform: rotateX(180deg);
-} */
-
 .moneda__cara{
         transform: rotateX(180deg);
 }
@@ -53,13 +68,21 @@ h1{
 
 /*  ********* BOTONES ************ */ 
 #btnLanzar,  #btnReiniciar{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 900;
+        margin: 5px 0;
         border: none;
         background-color:  #fff;
         font-size: 2em;
-        color: coral;
+        background-color: coral;
+        color: rgb(255, 255, 255);
+        width: 150px;
+        padding: 10px 0;
+        border-radius: 30px;
 }
 #btnLanzar:hover,  #btnReiniciar:hover{
-        color: deepskyblue;
+        background-color:deepskyblue;
+        color: rgb(255, 255, 255);
 }
 /*  ********* FIN BOTONES ************ */ 
 /*  ********* RESULTADOS ************ */ 
